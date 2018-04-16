@@ -1,120 +1,80 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:2:1-23:12
-MERGED from [com.android.support:design:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/3bc865f3d5851e0434976ec616835827/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/760c517047ed93a3a23ddd76ec69ac35/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/momo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/4dfa2ebf0beaa51d566b1a0f14089281/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/7dbe64897cd167b7e2006a82da0c2c70/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/a2df1511a183e0ed2d41edf5a97b39ee/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-v4:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/f16289226203d064fd6b926ffc93bee0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/545aa74da7bae5c55adaca9069fab9a2/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.0.aar/e6b0b93f70831668fdb1716eecec821f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/c9ec866f15386558b821d441a55a9b28/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/12b5e4ce2ceca03a4fa9fe761fdcf195/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/transition-27.1.0.aar/8541bdcaf9f0145e9257a1bae4aa008f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.0.aar/2fad9672b245342664281094471597a3/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/b5c2ef6b4cd10299d2a18cf9f9c18006/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/c1b7381fa34cd312d96f082e6024ec70/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/225541d078e2ca0f28ede02e3790b87f/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/500120dd862a097348ee260af775b331/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/c2d42be32161602a10acaadacba9043a/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:2:1-23:12
+ADDED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml:2:1-22:12
 	package
-		ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:3:5-41
-		INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml
-		INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml
+		ADDED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml:3:5-79
+		INJECTED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml
+		INJECTED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml
-		ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:2:1-23:12
-		INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml
-	android:versionCode
-		INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml
-		ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:2:1-23:12
-		INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml
+		INJECTED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml
+		INJECTED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml
+		INJECTED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml
 application
-ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:5:5-21:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/momo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/4dfa2ebf0beaa51d566b1a0f14089281/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/momo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/4dfa2ebf0beaa51d566b1a0f14089281/AndroidManifest.xml:9:5-20
+ADDED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml:5:5-20:19
+MERGED from [com.android.support:appcompat-v7:25.1.0] /home/momo/.android/build-cache/8bb695bb2d9c6a94c27f433139d9ec55c25ce8bc/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.1.0] /home/momo/.android/build-cache/bcc1ec681edb13d0b561e0a0fed57e2c510bcf89/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.0] /home/momo/.android/build-cache/e07a6958975883948e6bb497cda53d268198f643/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.0] /home/momo/.android/build-cache/45746478f69e038022b0a47fc3cad64c4c015eb3/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.0] /home/momo/.android/build-cache/c86bcdcb5693b03741d893ea726ec49f4f57d46e/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] /home/momo/.android/build-cache/3bc2205160a8fd768049e71cd5808d10e4a3c3ba/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.0] /home/momo/.android/build-cache/cd417597566f4032b3637e413b1871ef2e4d7e00/output/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha8] /home/momo/.android/build-cache/8cf1013f5d9b540493780b26e42bd25a14616a04/output/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-core-ui:25.1.0] /home/momo/.android/build-cache/172912faa161b81093ccdea91e94e6de4df40dfa/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.1.0] /home/momo/.android/build-cache/6318b4f60bd6cb336be692e4afd8c1e3d02e5db2/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:cardview-v7:25.1.0] /home/momo/.android/build-cache/4d14157a9a0a9458f5d2daf169ae2bca97ab459e/output/AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml:8:9-41
 	android:supportsRtl
-		ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:10:9-35
-	android:label
-		ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml:10:9-35
 	android:roundIcon
-		ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:9:9-54
-	android:icon
-		ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml:9:9-54
 	android:allowBackup
-		ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml:7:9-43
 	android:theme
-		ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:11:9-40
-activity#com.example.momo.permcheck.MainActivity
-ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:12:9-20:20
-	android:label
-		ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:14:13-45
+		ADDED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.android_examples.getinstalledappiconname_android_examplescom.MainActivity
+ADDED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml:12:9-18:20
 	android:name
-		ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:13:13-41
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:15:13-19:29
+		ADDED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
-ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:16:17-69
+ADDED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml:14:17-69
 	android:name
-		ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:16:25-66
+		ADDED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:18:17-77
+ADDED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml:16:17-77
 	android:name
-		ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml:18:27-74
+		ADDED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml:16:27-74
+activity#com.android_examples.getinstalledappiconname_android_examplescom.Main_Activity2
+ADDED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml:19:9-61
+	android:name
+		ADDED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml:19:19-49
 uses-sdk
-INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml
-INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:design:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/3bc865f3d5851e0434976ec616835827/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/3bc865f3d5851e0434976ec616835827/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/760c517047ed93a3a23ddd76ec69ac35/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/760c517047ed93a3a23ddd76ec69ac35/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/momo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/4dfa2ebf0beaa51d566b1a0f14089281/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/momo/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/4dfa2ebf0beaa51d566b1a0f14089281/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:animated-vector-drawable:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/7dbe64897cd167b7e2006a82da0c2c70/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/7dbe64897cd167b7e2006a82da0c2c70/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/a2df1511a183e0ed2d41edf5a97b39ee/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/a2df1511a183e0ed2d41edf5a97b39ee/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/f16289226203d064fd6b926ffc93bee0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/f16289226203d064fd6b926ffc93bee0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/545aa74da7bae5c55adaca9069fab9a2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/545aa74da7bae5c55adaca9069fab9a2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.0.aar/e6b0b93f70831668fdb1716eecec821f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.0.aar/e6b0b93f70831668fdb1716eecec821f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/c9ec866f15386558b821d441a55a9b28/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/c9ec866f15386558b821d441a55a9b28/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/12b5e4ce2ceca03a4fa9fe761fdcf195/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/12b5e4ce2ceca03a4fa9fe761fdcf195/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/transition-27.1.0.aar/8541bdcaf9f0145e9257a1bae4aa008f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/transition-27.1.0.aar/8541bdcaf9f0145e9257a1bae4aa008f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.0.aar/2fad9672b245342664281094471597a3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.0.aar/2fad9672b245342664281094471597a3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/b5c2ef6b4cd10299d2a18cf9f9c18006/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/b5c2ef6b4cd10299d2a18cf9f9c18006/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/c1b7381fa34cd312d96f082e6024ec70/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/c1b7381fa34cd312d96f082e6024ec70/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/225541d078e2ca0f28ede02e3790b87f/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/225541d078e2ca0f28ede02e3790b87f/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/500120dd862a097348ee260af775b331/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/500120dd862a097348ee260af775b331/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/c2d42be32161602a10acaadacba9043a/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /home/momo/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/c2d42be32161602a10acaadacba9043a/AndroidManifest.xml:20:5-44
-INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml
-INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml
+INJECTED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:25.1.0] /home/momo/.android/build-cache/8bb695bb2d9c6a94c27f433139d9ec55c25ce8bc/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.1.0] /home/momo/.android/build-cache/bcc1ec681edb13d0b561e0a0fed57e2c510bcf89/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.1.0] /home/momo/.android/build-cache/e07a6958975883948e6bb497cda53d268198f643/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.1.0] /home/momo/.android/build-cache/45746478f69e038022b0a47fc3cad64c4c015eb3/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.1.0] /home/momo/.android/build-cache/c86bcdcb5693b03741d893ea726ec49f4f57d46e/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] /home/momo/.android/build-cache/3bc2205160a8fd768049e71cd5808d10e4a3c3ba/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.1.0] /home/momo/.android/build-cache/cd417597566f4032b3637e413b1871ef2e4d7e00/output/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha8] /home/momo/.android/build-cache/8cf1013f5d9b540493780b26e42bd25a14616a04/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:25.1.0] /home/momo/.android/build-cache/5ae27dd3f7db3af054adb8a59c10c7e6ce21b66d/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-ui:25.1.0] /home/momo/.android/build-cache/172912faa161b81093ccdea91e94e6de4df40dfa/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.1.0] /home/momo/.android/build-cache/6318b4f60bd6cb336be692e4afd8c1e3d02e5db2/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:cardview-v7:25.1.0] /home/momo/.android/build-cache/4d14157a9a0a9458f5d2daf169ae2bca97ab459e/output/AndroidManifest.xml:20:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.1.0] /home/momo/.android/build-cache/8bb695bb2d9c6a94c27f433139d9ec55c25ce8bc/output/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml
-		ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml
-		INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml
+		INJECTED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml
+		INJECTED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml
-		ADDED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml
-		INJECTED from /home/momo/AndroidStudioProjects/PermCheck/app/src/main/AndroidManifest.xml
+		INJECTED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml
+		INJECTED from /home/momo/Downloads/PA/Display_Allfiles/GetInstalledAppIconName-Android-Examples.com/GetInstalledAppIconName-Android-Examples.com_/GetInstalledAppIconName-Android-Examples.com/app/src/main/AndroidManifest.xml
