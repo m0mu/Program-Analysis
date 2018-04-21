@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.ActivityInfo;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.graphics.drawable.Drawable;
@@ -111,6 +112,21 @@ public class ApkInfoExtractor {
 
             }
 
+        }
+
+        public List<String> Get_Granted_Permissions(String appPackage)
+        {
+            List<String> granted = new ArrayList<String>();
+            try {
+                PackageInfo pi = context1.getPackageManager().getPackageInfo(appPackage, PackageManager.GET_PERMISSIONS);
+                for (int i = 0; i < pi.requestedPermissions.length; i++) {
+                    if ((pi.requestedPermissionsFlags[i] & PackageInfo.REQUESTED_PERMISSION_GRANTED) != 0) {
+                        granted.add(pi.requestedPermissions[i]);
+                    }
+                }
+            } catch (Exception e) {
+            }
+            return granted;
         }
 }
 

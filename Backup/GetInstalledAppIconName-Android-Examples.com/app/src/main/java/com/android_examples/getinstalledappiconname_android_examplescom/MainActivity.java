@@ -39,9 +39,6 @@ public class MainActivity extends AppCompatActivity {
 
         adapter = new AppsAdapter(MainActivity.this, new ApkInfoExtractor(MainActivity.this).GetAllInstalledApkInfo());
 
-        send_context = MainActivity.this;
-        send_list = new ApkInfoExtractor(MainActivity.this).GetAllInstalledApkInfo();
-
         recyclerView.setAdapter(adapter);
     }
 

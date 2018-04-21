@@ -98,7 +98,7 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
         final Drawable drawable = apkInfoExtractor.getAppIconByPackageName(ApplicationPackageName);
 
 
-        final String perm =  apkInfoExtractor.GetPermissions(Manifest.permission.CAMERA, ApplicationPackageName);
+//        final String perm =  apkInfoExtractor.GetPermissions(Manifest.permission.CAMERA, ApplicationPackageName);
 
 
         viewHolder.textView_App_Name.setText(ApplicationLabelName);
@@ -107,7 +107,7 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
 
         viewHolder.imageView.setImageDrawable(drawable);
 
-        viewHolder.textView_perm_Name.setText(perm);
+//        viewHolder.textView_perm_Name.setText(perm);
 
 
 
@@ -131,7 +131,7 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
 //                    String test4 = test3.get_name(pass_this_name);
                     Intent intent1 = new Intent(context1, Main_Activity2.class);
 
-                    intent1.putExtra("Permission", perm);
+//                    intent1.putExtra("Permission", perm);
 
                     //// TEST
                     intent1.putExtra("ApplicationPackageName", ApplicationPackageName);
