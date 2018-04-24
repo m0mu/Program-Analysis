@@ -12,6 +12,7 @@ import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.Handler;
 import android.speech.tts.TextToSpeech;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.PermissionChecker;
@@ -41,6 +42,8 @@ public class AppsAdapter_2 extends RecyclerView.Adapter<AppsAdapter_2.ViewHolder
     List<String> stringList;
 
 
+
+
 //    public android.support.v7.widget.RecyclerView.Adapter send_Context_and_List(Context context, List<String> list)
 //    {
 //        context1 = context;
@@ -60,17 +63,18 @@ public class AppsAdapter_2 extends RecyclerView.Adapter<AppsAdapter_2.ViewHolder
     public static class ViewHolder extends RecyclerView.ViewHolder{
 
         public CardView cardView;
-        public ImageView imageView;
         public TextView textView_App_Package_Name;
         public TextView textView_perm_Name;
         public CheckedTextView chk;
+
+
+
 
         public ViewHolder (View view){
 
             super(view);
 
             cardView = (CardView) view.findViewById(R.id.card_view_2);
-            imageView = (ImageView) view.findViewById(R.id.imageview);
             textView_App_Package_Name = (TextView) view.findViewById(R.id.Apk_Package_Name);
             textView_perm_Name = (TextView) view.findViewById(R.id.Permissions);
             chk = (CheckedTextView) view.findViewById(R.id.ctv);
@@ -87,38 +91,84 @@ public class AppsAdapter_2 extends RecyclerView.Adapter<AppsAdapter_2.ViewHolder
         return viewHolder;
     }
 
+
+
     @Override
-    public void onBindViewHolder(ViewHolder viewHolder, int position){
+    public void onBindViewHolder(final ViewHolder viewHolder, int position) {
 
-        final ApkInfoExtractor apkInfoExtractor = new ApkInfoExtractor(context1);
-        final String ApplicationPackageName = (String) stringList.get(position);
-        final Drawable drawable = apkInfoExtractor.getAppIconByPackageName(ApplicationPackageName);
-
+        final String ApplicationPackageName = (String) stringList.get(position);//
         viewHolder.textView_App_Package_Name.setText(ApplicationPackageName);
-        viewHolder.imageView.setImageDrawable(drawable);
+        viewHolder.chk.setChecked(true);
 
 
 
         //Adding click listener on CardView to open clicked application directly from here .
         viewHolder.cardView.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
+                viewHolder.chk.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (viewHolder.chk.isChecked()) {
+//                            viewHolder.chk.setText("Permission Denied!");
+                            final Toast toast = Toast.makeText(context1,ApplicationPackageName+" Permission Denied!", Toast.LENGTH_SHORT);
+                            toast.show();
+                            viewHolder.chk.setChecked(false);
+                            Handler handler = new Handler();
+                            handler.postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    toast.cancel();
+                                }
+                            }, 500);
 
-                Intent intent = context1.getPackageManager().getLaunchIntentForPackage(ApplicationPackageName);
-                if(intent != null){
-                    Intent intent1 = new Intent(context1, Main_Activity2.class);
-                    //// TEST
-                    intent1.putExtra("ApplicationPackageName", ApplicationPackageName);
-                    //// TEST
-                    context1.startActivity(intent1);
-                }
-                else {
+                            // ADD CODE TO REMOVE THE PERMISSION FROM THE MANIFEST
+                            // OR REMOVE PERMISSION JAVA CODE
+                            // One touch add permissions plugin
 
-                    Toast.makeText(context1,ApplicationPackageName + " Error, Please Try Again.", Toast.LENGTH_LONG).show();
-                }
+
+
+
+
+
+
+
+                        } else {
+//                            viewHolder.chk.setText("Permission Granted!");
+                            final Toast toast = Toast.makeText(context1,ApplicationPackageName+" Permission Granted!", Toast.LENGTH_SHORT);
+                            toast.show();
+                            viewHolder.chk.setChecked(true);
+                            Handler handler = new Handler();
+                            handler.postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    toast.cancel();
+                                }
+                            }, 500);
+                        }
+
+
+                        // ADD CODE TO ADD THE PERMISSION TO THE MANIFEST
+
+
+//                Intent intent = context1.getPackageManager().getLaunchIntentForPackage(ApplicationPackageName);
+//                if(intent != null){
+//                    Intent intent1 = new Intent(context1, Main_Activity2.class);
+//                    //// TEST
+//                    intent1.putExtra("ApplicationPackageName", ApplicationPackageName);
+//                    //// TEST
+//                    context1.startActivity(intent1);
+//                }
+//                else {
+//
+//                    Toast.makeText(context1,ApplicationPackageName + " Error, Please Try Again.", Toast.LENGTH_LONG).show();
+//                }
+                    }
+                });
             }
         });
-    }
+    };
 
     @Override
     public int getItemCount(){
