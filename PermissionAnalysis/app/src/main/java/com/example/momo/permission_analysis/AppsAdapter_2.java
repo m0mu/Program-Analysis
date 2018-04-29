@@ -104,6 +104,7 @@ public class AppsAdapter_2 extends RecyclerView.Adapter<AppsAdapter_2.ViewHolder
         viewHolder.chk.setChecked(true);
 
 
+
         //Adding click listener on CardView to open clicked application directly from here .
         viewHolder.cardView.setOnClickListener(new View.OnClickListener() {
 

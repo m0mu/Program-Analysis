@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.media.Image;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.PermissionChecker;
 import android.support.v7.app.AppCompatActivity;
@@ -78,9 +79,13 @@ public class Main_Activity2 extends AppCompatActivity {
         ApkInfoExtractor apk = new ApkInfoExtractor(Main_Activity2.this);
         ImageView imgView = (ImageView) findViewById(R.id.imageView);
         imgView.setImageDrawable(apk.getAppIconByPackageName(applicationPackageName));
-
         TextView textView_app_name = (TextView) findViewById(R.id.pkg_name);
         textView_app_name.setText(apk.GetAppName(applicationPackageName));
+        ImageView trashView = (ImageView) findViewById(R.id.trash_icon);
+        trashView.setImageResource(R.drawable.trash);
+
+
+
 
 
 //        TextView textView = (TextView) findViewById(R.id.Permission);
