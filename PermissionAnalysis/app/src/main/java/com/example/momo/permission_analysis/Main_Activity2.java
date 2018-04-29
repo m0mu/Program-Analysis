@@ -63,15 +63,16 @@ public class Main_Activity2 extends AppCompatActivity {
 //            ctv.setText("Permission Denied!");
 //            ctv.setChecked(false);
 
+        // CLEANING ALL PERMISSIONS!
         all_permissions = apk.Get_Granted_Permissions(applicationPackageName);
-
-        int count = 0;
-        for (String permission: all_permissions)
-        {
-            all_permissions.set(count, permission.replace("android.permission.",""));
-            count ++;
-
-        }
+//
+//        int count = 0;
+//        for (String permission: all_permissions)
+//        {
+//            all_permissions.set(count, permission.replace("android.permission.",""));
+//            count ++;
+//
+//        }
 
         final CheckedTextView ctv = (CheckedTextView) findViewById(R.id.checkedTextView1);
         if (perm.equalsIgnoreCase( "Permission Granted!"))

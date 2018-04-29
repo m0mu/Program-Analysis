@@ -97,7 +97,11 @@ public class AppsAdapter_2 extends RecyclerView.Adapter<AppsAdapter_2.ViewHolder
     public void onBindViewHolder(final ViewHolder viewHolder, int position) {
 
         final String ApplicationPackageName = (String) stringList.get(position);//
-        viewHolder.textView_App_Package_Name.setText(ApplicationPackageName);
+        int last_index = ApplicationPackageName.lastIndexOf('.');
+        int test = ApplicationPackageName.length() - last_index;
+        viewHolder.textView_App_Package_Name.setText(ApplicationPackageName.substring(last_index+1));
+        ApkInfoExtractor apk = new ApkInfoExtractor(context1);
+        viewHolder.textView_perm_Name.setText(apk.Get_Permission_Description(ApplicationPackageName));
         viewHolder.chk.setChecked(true);
 
 

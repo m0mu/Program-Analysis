@@ -15,7 +15,7 @@
 
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="60dp"
+        android:layout_height="75dp"
 
         >
 
@@ -24,26 +24,26 @@
             android:id="@+id/Apk_Package_Name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="0dp"
-            android:textColor="#795548" />
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#795548"
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/Permissions"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="312dp"
+            android:layout_height="24dp"
+            android:layout_alignBottom="@+id/ctv"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="147dp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textSize="9.5sp" />
 
         <CheckedTextView
             android:id="@+id/ctv"
-            android:layout_width="262dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginEnd="58dp"
             android:checkMark="?android:attr/listChoiceIndicatorMultiple" />
 
     </RelativeLayout>

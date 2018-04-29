@@ -8,6 +8,7 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.content.pm.PermissionInfo;
 import android.content.pm.ResolveInfo;
 import android.graphics.drawable.Drawable;
 import android.support.v4.content.ContextCompat;
@@ -128,5 +129,39 @@ public class ApkInfoExtractor {
             }
             return granted;
         }
+
+        public String Get_Permission_Description (String package_Name)
+        {
+            PackageManager pkg = context1.getPackageManager();
+            try {
+                PermissionInfo pinfo = context1.getPackageManager().getPermissionInfo(package_Name, PackageManager.GET_META_DATA);
+                try{
+                    return pinfo.loadDescription(pkg).toString();
+                }
+                catch (NullPointerException e1)
+                {
+                    return pinfo.loadLabel(pkg).toString();
+                }
+
+            } catch (PackageManager.NameNotFoundException e) {
+                e.printStackTrace();
+            }
+            return null;
+
+//            try {
+//                PermissionInfo pinfo = context1.getPackageManager().getPermissionInfo(package_Name, PackageManager.GET_META_DATA);
+//            }catch (PackageManager.NameNotFoundException e)
+//            {
+//
+//            }
+//            String return_desc = pinfo.loadDescription(pkg).toString();
+//            if(return_desc.equals(""))
+//            {
+//                return pinfo.loadLabel(pkg).toString();
+//
+//            }
+//            return  return_desc;
+        }
 }
+
 

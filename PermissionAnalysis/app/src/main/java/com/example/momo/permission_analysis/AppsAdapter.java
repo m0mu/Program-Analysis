@@ -1,8 +1,5 @@
 package com.example.momo.permission_analysis;
 
-/**
- * Created by Juned on 4/14/2017.
- */
 
 import android.Manifest;
 import android.app.ActivityManager;
