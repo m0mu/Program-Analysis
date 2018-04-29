@@ -41,10 +41,10 @@
                 android:id="@+id/Score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/Apk_Name"
                 android:layout_centerVertical="true"
-                android:layout_toEndOf="@+id/Apk_Name"
                 android:text="Score here"
-                android:textColor="#000" />
+                android:textColor="#000080" />
 
             <ImageView
                 android:id="@+id/score_icon"
