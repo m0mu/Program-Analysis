@@ -111,7 +111,7 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
         all_permissions = apkInfoExtractor.Get_Granted_Permissions(ApplicationPackageName);
         Main_Activity2 m2 = new Main_Activity2();
         String score = m2.getScore(all_permissions, ApplicationPackageName);
-        viewHolder.textView_score.setText(score);
+        viewHolder.textView_score.setText("Score: " + score);
         Double d_score = Double.parseDouble(score);
 
         if(Math.round(d_score) <= 1)
