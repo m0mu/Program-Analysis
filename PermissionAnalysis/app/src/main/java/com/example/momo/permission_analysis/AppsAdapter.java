@@ -10,6 +10,7 @@ import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.media.Image;
 import android.net.Uri;
 import android.speech.tts.TextToSpeech;
 import android.support.v4.content.ContextCompat;
@@ -61,7 +62,7 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
         public CardView cardView;
         public ImageView imageView;
         public TextView textView_App_Name;
-//        public TextView textView_App_Package_Name;
+        public ImageView score_icon;
         public TextView textView_score;
 
 
@@ -72,7 +73,7 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
             cardView = (CardView) view.findViewById(R.id.card_view);
             imageView = (ImageView) view.findViewById(R.id.imageview);
             textView_App_Name = (TextView) view.findViewById(R.id.Apk_Name);
-//            textView_App_Package_Name = (TextView) view.findViewById(R.id.Apk_Package_Name);
+            score_icon = (ImageView) view.findViewById(R.id.score_icon);
             textView_score = (TextView) view.findViewById(R.id.Score);
         }
     }
@@ -111,6 +112,20 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
         Main_Activity2 m2 = new Main_Activity2();
         String score = m2.getScore(all_permissions, ApplicationPackageName);
         viewHolder.textView_score.setText(score);
+        Double d_score = Double.parseDouble(score);
+
+        if(Math.round(d_score) <= 1)
+        {
+            viewHolder.score_icon.setImageResource(R.drawable.safe);
+        }
+        if(Math.round(d_score) > 1 && Math.round(d_score) <=7 )
+        {
+            viewHolder.score_icon.setImageResource(R.drawable.alert);
+        }
+        if(Math.round(d_score) >=7)
+        {
+            viewHolder.score_icon.setImageResource(R.drawable.high_alert);
+        }
 
 
 
