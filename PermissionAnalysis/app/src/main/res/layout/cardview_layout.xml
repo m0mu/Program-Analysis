@@ -24,36 +24,27 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@mipmap/ic_launcher"
+                android:contentDescription="TODO" />
 
             <TextView
                 android:id="@+id/Apk_Name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
                 android:layout_marginTop="6dp"
                 android:layout_toEndOf="@id/imageview"
-                android:layout_toRightOf="@id/imageview"
                 android:textColor="#000" />
 
-            <TextView
-                android:id="@+id/Apk_Package_Name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/Apk_Name"
-                android:layout_marginLeft="4dp"
-                android:layout_marginTop="0dp"
-                android:layout_toEndOf="@id/imageview"
-                android:layout_toRightOf="@id/imageview"
-                android:textColor="#795548" />
 
             <TextView
-                android:id="@+id/Permissions"
+                android:id="@+id/Score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="147dp"
+                android:layout_marginStart="84dp"
+                android:text="Score here"
                 android:textColor="#000" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>

@@ -98,12 +98,10 @@ public class AppsAdapter_2 extends RecyclerView.Adapter<AppsAdapter_2.ViewHolder
 
         final String ApplicationPackageName = (String) stringList.get(position);//
         int last_index = ApplicationPackageName.lastIndexOf('.');
-        int test = ApplicationPackageName.length() - last_index;
         viewHolder.textView_App_Package_Name.setText(ApplicationPackageName.substring(last_index+1));
         ApkInfoExtractor apk = new ApkInfoExtractor(context1);
         viewHolder.textView_perm_Name.setText(apk.Get_Permission_Description(ApplicationPackageName));
         viewHolder.chk.setChecked(true);
-
 
 
         //Adding click listener on CardView to open clicked application directly from here .
@@ -130,11 +128,6 @@ public class AppsAdapter_2 extends RecyclerView.Adapter<AppsAdapter_2.ViewHolder
                             // ADD CODE TO REMOVE THE PERMISSION FROM THE MANIFEST
                             // OR REMOVE PERMISSION JAVA CODE
                             // One touch add permissions plugin
-
-
-
-
-
 
 
 

@@ -60,8 +60,8 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
         public CardView cardView;
         public ImageView imageView;
         public TextView textView_App_Name;
-        public TextView textView_App_Package_Name;
-        public TextView textView_perm_Name;
+//        public TextView textView_App_Package_Name;
+        public TextView textView_score;
 
         public ViewHolder (View view){
 
@@ -70,8 +70,8 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
             cardView = (CardView) view.findViewById(R.id.card_view);
             imageView = (ImageView) view.findViewById(R.id.imageview);
             textView_App_Name = (TextView) view.findViewById(R.id.Apk_Name);
-            textView_App_Package_Name = (TextView) view.findViewById(R.id.Apk_Package_Name);
-            textView_perm_Name = (TextView) view.findViewById(R.id.Permissions);
+//            textView_App_Package_Name = (TextView) view.findViewById(R.id.Apk_Package_Name);
+            textView_score = (TextView) view.findViewById(R.id.Score);
         }
     }
 
@@ -100,13 +100,12 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
 
         viewHolder.textView_App_Name.setText(ApplicationLabelName);
 
-        viewHolder.textView_App_Package_Name.setText(ApplicationPackageName);
+//        viewHolder.textView_App_Package_Name.setText(ApplicationPackageName);
 
         viewHolder.imageView.setImageDrawable(drawable);
 
-//        viewHolder.textView_perm_Name.setText(perm);
-
-
+        Main_Activity2 m2 = new Main_Activity2();
+//        viewHolder.textView_score.setText(m2.score);
 
 
 
