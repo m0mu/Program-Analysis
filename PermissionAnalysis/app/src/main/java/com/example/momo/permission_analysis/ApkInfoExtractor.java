@@ -140,7 +140,7 @@ public class ApkInfoExtractor {
                 }
                 catch (NullPointerException e1)
                 {
-                    return pinfo.loadLabel(pkg).toString();
+                    return (pinfo.loadLabel(pkg).toString()).substring(package_Name.lastIndexOf('.')+1);
                 }
 
             } catch (PackageManager.NameNotFoundException e) {

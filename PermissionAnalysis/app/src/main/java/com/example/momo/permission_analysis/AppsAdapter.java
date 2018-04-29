@@ -27,6 +27,7 @@ import android.view.ViewGroup;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 import static android.Manifest.permission.RECORD_AUDIO;
@@ -63,6 +64,7 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
 //        public TextView textView_App_Package_Name;
         public TextView textView_score;
 
+
         public ViewHolder (View view){
 
             super(view);
@@ -89,6 +91,7 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
     public void onBindViewHolder(ViewHolder viewHolder, int position){
 
         final ApkInfoExtractor apkInfoExtractor = new ApkInfoExtractor(context1);
+        List<String> all_permissions = new ArrayList<String>();
 
         final String ApplicationPackageName = (String) stringList.get(position);
         final String ApplicationLabelName = apkInfoExtractor.GetAppName(ApplicationPackageName);
@@ -104,8 +107,10 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
 
         viewHolder.imageView.setImageDrawable(drawable);
 
+        all_permissions = apkInfoExtractor.Get_Granted_Permissions(ApplicationPackageName);
         Main_Activity2 m2 = new Main_Activity2();
-//        viewHolder.textView_score.setText(m2.score);
+        String score = m2.getScore(all_permissions, ApplicationPackageName);
+        viewHolder.textView_score.setText(score);
 
 
 

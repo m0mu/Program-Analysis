@@ -14,6 +14,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewDebug;
 import android.widget.CheckedTextView;
 import android.widget.ImageView;
 import android.widget.ScrollView;
@@ -42,27 +43,28 @@ public class Main_Activity2 extends AppCompatActivity {
     List<String> Protection_signature = Arrays.asList("BIND_ACCESSIBILITY_SERVICE", "BIND_AUTOFILL_SERVICE", "BIND_CARRIER_SERVICES", "BIND_CHOOSER_TARGET_SERVICE", "BIND_CONDITION_PROVIDER_SERVICE", "BIND_DEVICE_ADMIN", "BIND_DREAM_SERVICE", "BIND_INCALL_SERVICE", "BIND_INPUT_METHOD", "BIND_MIDI_DEVICE_SERVICE", "BIND_NFC_SERVICE", "BIND_NOTIFICATION_LISTENER_SERVICE", "BIND_PRINT_SERVICE", "BIND_SCREENING_SERVICE", "BIND_TELECOM_CONNECTION_SERVICE", "BIND_TEXT_SERVICE", "BIND_TV_INPUT", "BIND_VISUAL_VOICEMAIL_SERVICE", "BIND_VOICE_INTERACTION", "BIND_VPN_SERVICE", "BIND_VR_LISTENER_SERVICE", "BIND_WALLPAPER", "CLEAR_APP_CACHE", "MANAGE_DOCUMENTS", "READ_VOICEMAIL", "REQUEST_INSTALL_PACKAGES", "SYSTEM_ALERT_WINDOW", "WRITE_SETTINGS", "WRITE_VOICEMAIL");
     List<String> Protection_dangerous = Arrays.asList("READ_CALENDAR", "WRITE_CALENDAR", "CAMERA", "READ_CONTACTS", "WRITE_CONTACTS", "GET_ACCOUNTS", "ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION", "RECORD_AUDIO", "READ_PHONE_STATE", "READ_PHONE_NUMBERS", "CALL_PHONE", "ANSWER_PHONE_CALLS (must request at runtime)", "READ_CALL_LOG", "WRITE_CALL_LOG", "ADD_VOICEMAIL", "USE_SIP", "PROCESS_OUTGOING_CALLS", "ANSWER_PHONE_CALLS", "BODY_SENSORS", "SEND_SMS", "RECEIVE_SMS", "READ_SMS", "RECEIVE_WAP_PUSH", "RECEIVE_MMS", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE");
 
-    int score = 0;
 
-    public void getScore (List<String> all_permissions)
+    public String getScore (List<String> all_permissions, String app_pkg_name)
     {
-        int count = 0;
+        double count = 0;
         for (String permission : all_permissions)
         {
-            if (Protection_normal.contains(permission)) //36 permissions in total
+//            int last_index = app_pkg_name.lastIndexOf('.');
+            if (Protection_normal.contains(permission.substring(permission.lastIndexOf('.')+1))) //36 permissions in total
             {
                 count += 0.1;
             }
-            if (Protection_signature.contains(permission))  //29 permissions in total
+            if (Protection_signature.contains(permission.substring(permission.lastIndexOf('.')+1)))  //29 permissions in total
             {
                 count += 0.1;
             }
-            if (Protection_dangerous.contains(permission)) //27 permissions in total
+            if (Protection_dangerous.contains(permission.substring(permission.lastIndexOf('.')+1))) //27 permissions in total
             {
                 count += 1;
             }
         }
-        score = count;
+        count = Math.round(count * 100D) / 100D;
+        return Double.toString(count);
     }
 
     @Override
@@ -96,7 +98,6 @@ public class Main_Activity2 extends AppCompatActivity {
 
         // CLEANING ALL PERMISSIONS!
         all_permissions = apk.Get_Granted_Permissions(applicationPackageName);
-        getScore(all_permissions);
 //
 //        int count = 0;
 //        for (String permission: all_permissions)
